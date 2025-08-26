@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		try {
-            BufferedReader reader = new BufferedReader(new FileReader(""));
+            BufferedReader reader = new BufferedReader(new FileReader("Entrada"));
             String[] dimensoes = reader.readLine().split(" ");
             int largura = Integer.parseInt(dimensoes[0]);
             int altura = Integer.parseInt(dimensoes[1]);
@@ -23,7 +23,7 @@ public class Main {
                 corte.adicionarPeca(new Peca(tipo, comprimento, alturaPeca, quantidade));
             }
 
-            corte.fazerCorte("");
+            corte.fazerCorte("Saida");
             reader.close();
         } catch (IOException e) {
             e.printStackTrace();
